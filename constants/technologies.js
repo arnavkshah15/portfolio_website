@@ -1,5 +1,5 @@
 import { AiFillHtml5, AiOutlineAntDesign, AiFillGithub, AiFillGitlab } from "react-icons/ai";
-import { DiCss3, DiVisualstudio } from "react-icons/di";
+import { DiAngularSimple, DiCss3, DiDotnet, DiPython, DiSwift, DiVisualstudio } from "react-icons/di";
 import { IoLogoJavascript } from "react-icons/io";
 import { FaReact, FaWordpressSimple, FaFigma, FaTrello } from "react-icons/fa";
 import { BsBootstrap } from "react-icons/bs";
@@ -13,48 +13,44 @@ import HeadlessUiIcon from "public/assets/svg/headlessui.svg";
 import MuiIcon from "public/assets/svg/mui.svg";
 import ChakraIcon from "public/assets/svg/chakraui.svg";
 import StyledIcon from "public/assets/svg/styledcomponents.svg";
+import { SiTensorflow } from "react-icons/si";
+import { SiNumpy } from "react-icons/si";
+import { SiOpencv } from "react-icons/si";
 
 export const TECHNOLOGIES = [
 	{
 		category: "Mobile",
 		items: [{ name: "Flutter", icon: <RiFlutterFill size={32} /> },
-		{ name: "Swift", icon: <RiFlutterFill size={32} /> }]
+		{ name: "Swift", icon: <DiSwift size={32} /> }]
 	},
 	{
-		category: "Front-end",
+		category: "Web Development",
 		items: [
 			{ name: "HTML", icon: <AiFillHtml5 size={32} /> },
 			{ name: "CSS", icon: <DiCss3 size={32} /> },
 			{ name: "JS", icon: <IoLogoJavascript size={32} /> },
-			{ name: "React", icon: <FaReact size={32} /> },
+			{ name: ".NET", icon: <DiDotnet size={32} /> },
 			{ name: "Next", icon: <TbBrandNextjs size={32} /> },
 			{ name: "Tailwind CSS", icon: <TbBrandTailwind size={32} /> },
-			{ name: "MUI", icon: <MuiIcon width={32} /> },
-			{ name: "AntD", icon: <AiOutlineAntDesign size={32} /> },
 			{ name: "Bootstrap", icon: <BsBootstrap size={32} /> },
-			{ name: "Chakra", icon: <ChakraIcon width={32} /> },
-			{ name: "styled components", icon: <StyledIcon width={32} /> },
-			{ name: "HeadlessUI", icon: <HeadlessUiIcon width={32} /> }
+			{ name: "Angular", icon: <DiAngularSimple size={32} /> }
 		]
 	},
 	{
-		category: "UI tools",
+		category: "Machine Learning",
 		items: [
-			{ name: "Figma", icon: <FaFigma size={32} /> },
-			{ name: "Zeplin", icon: <ZeplinIcon width={36} /> },
-			{ name: "XD", icon: <AdobeXDIcon width={32} /> }
+			{ name: "Python", icon: <DiPython size={32} /> },
+			{ name: "Tensorflow", icon: <SiTensorflow width={32} /> },
+			{ name: "Numpy", icon: <SiNumpy size={32} /> },
+			{ name: "OpenCV", icon: <SiOpencv size={32} /> },
 		]
 	},
 	{
 		category: "Other tools",
 		items: [
-			{ name: "WordPress CMS", icon: <FaWordpressSimple size={32} /> },
 			{ name: "Jira", icon: <JiraIcon width={32} /> },
-			{ name: "Trello", icon: <FaTrello size={32} /> },
 			{ name: "Github", icon: <AiFillGithub size={32} /> },
-			{ name: "Gitlab", icon: <AiFillGitlab size={32} /> },
 			{ name: "VsCode", icon: <DiVisualstudio size={32} /> },
-			{ name: "WebStorm", icon: <WebstormIcon width={32} /> }
 		]
 	}
 ];
