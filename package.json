@@ -30,5 +30,6 @@
 		"postcss": "^8.4.32",
 		"prettier": "^2.8.8",
 		"tailwindcss": "^3.4.0"
-	}
+	},
+	"homepage":"https://arnavkshah15.github.io/portfolio_website"
 }
